@@ -1,6 +1,11 @@
 const assert = require('assert');
 const multiply = require('./src/index.js');
 
+
+it('should multiply 2 numbers and return product 5775', () => {
+  assert.strictEqual(multiply('231', '25'), '5775');
+});
+
 it('should multiply 2 numbers and return product 50', () => {
   assert.strictEqual(multiply('5', '10'), '50');
 });
